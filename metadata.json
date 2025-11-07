@@ -1,0 +1,7 @@
+{
+  "name": "The Nexus",
+  "description": "A platform to create, customize, and interact with personalized AI assistants using real-time voice conversations, persistent memory, and powerful agent capabilities.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
