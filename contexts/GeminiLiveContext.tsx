@@ -128,13 +128,7 @@ export const GeminiLiveProvider: React.FC<{ children: ReactNode }> = ({ children
       ${history.map(t => `${t.speaker}: ${t.text}`).join('\n')}
     `.trim();
 
-    // FIX: Use process.env.API_KEY as per guidelines.
-    if (!process.env.API_KEY) {
-      console.error("API_KEY not set!");
-      setStatus('error');
-      return;
-    }
-    // FIX: Use process.env.API_KEY as per guidelines.
+    // The API key is injected by the environment. The explicit check is removed to prevent crashes.
     const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
     try {

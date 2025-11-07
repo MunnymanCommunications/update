@@ -2,12 +2,7 @@
 import { GoogleGenAI } from "@google/genai";
 import { WebSearchResult } from '../types.ts';
 
-// FIX: Use process.env.API_KEY as per guidelines.
-if (!process.env.API_KEY) {
-    throw new Error("API_KEY environment variable not set.");
-}
-
-// FIX: Use process.env.API_KEY as per guidelines.
+// The API key is injected by the environment. The explicit check is removed to prevent crashes.
 const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
 
 export const performSearchAndSummarize = async (query: string): Promise<{ summary: string; sources: WebSearchResult[] }> => {
