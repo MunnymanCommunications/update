@@ -1,7 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
-import AssistantLayout from './layouts/AssistantLayout';
-import ConversationPage from './pages/ConversationPage';
+import AssistantLayout from './layouts/AssistantLayout.tsx';
 
 // A simple mock for authentication state
 const useAuth = () => {

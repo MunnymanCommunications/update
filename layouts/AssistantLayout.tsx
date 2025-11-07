@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { GeminiLiveProvider } from '../contexts/GeminiLiveContext';
-import ConversationPage from '../pages/ConversationPage';
+import { GeminiLiveProvider } from '../contexts/GeminiLiveContext.tsx';
+import ConversationPage from '../pages/ConversationPage.tsx';
 
 const AssistantLayout: React.FC = () => {
   // In a full app, state would manage which page is visible (Conversation, Memory, etc.)

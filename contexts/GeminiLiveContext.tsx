@@ -2,9 +2,9 @@
 import React, { createContext, useContext, useState, useRef, ReactNode, useCallback } from 'react';
 // FIX: Removed LiveSession as it is not an exported member of @google/genai
 import { GoogleGenAI, LiveServerMessage, Modality, Type, FunctionDeclaration, Blob } from '@google/genai';
-import { decode, decodeAudioData, encode } from '../utils/audioUtils';
-import { Assistant, MemoryItem, ConversationTurn, WebSearchResult } from '../types';
-import { performSearchAndSummarize } from '../services/geminiService';
+import { decode, decodeAudioData, encode } from '../utils/audioUtils.ts';
+import { Assistant, MemoryItem, ConversationTurn, WebSearchResult } from '../types.ts';
+import { performSearchAndSummarize } from '../services/geminiService.ts';
 
 type SessionStatus = 'idle' | 'connecting' | 'active' | 'error' | 'stopped';
 

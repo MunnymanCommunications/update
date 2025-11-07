@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { WebSearchResult } from '../types';
+import { WebSearchResult } from '../types.ts';
 import { Link } from 'lucide-react';
 
 interface WebResultsProps {

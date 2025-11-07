@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import { useGeminiLive } from '../contexts/GeminiLiveContext';
-import { Assistant, MemoryItem, ConversationTurn } from '../types';
-import Orb from '../components/Orb';
-import WebResults from '../components/WebResults';
+import { useGeminiLive } from '../contexts/GeminiLiveContext.tsx';
+import { Assistant, MemoryItem, ConversationTurn } from '../types.ts';
+import Orb from '../components/Orb.tsx';
+import WebResults from '../components/WebResults.tsx';
 import { Mic, MicOff, AlertTriangle } from 'lucide-react';
 
 // Mock data

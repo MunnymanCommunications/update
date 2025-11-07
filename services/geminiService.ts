@@ -1,6 +1,6 @@
 
 import { GoogleGenAI } from "@google/genai";
-import { WebSearchResult } from '../types';
+import { WebSearchResult } from '../types.ts';
 
 // FIX: Use process.env.API_KEY as per guidelines.
 if (!process.env.API_KEY) {
